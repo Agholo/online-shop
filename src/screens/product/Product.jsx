@@ -7,6 +7,7 @@ import { PopupControl } from "../../providers/popupControler";
 import ToCart from "../../popups/toCart";
 import { useParams } from "react-router-dom";
 import catalogJson from "../../catalog.json";
+import GoodButton from "../home/homeComponents/content/goodButton";
 
 function Product() {
   let { isOpen } = useContext(PopupControl);
@@ -34,75 +35,40 @@ function Product() {
           ></img>
         </div>
         <div className={styles.content}>
-          <div style={{ height: "100%", width: "85%", backgroundColor: "red" }}>
+          <div style={{ height: "100%", width: "85%" }}>
             <p style={{ margin: 0 }}>{product.brend}</p>
             <p style={{ fontSize: "33px", margin: 0 }}>{product.name}</p>
-            <div
-              style={{
-                display: "flex",
-                height: "120px",
-                width: "100%",
-                marginBlock: "50px",
-                justifyContent: "space-between",
-              }}
-            >
-              <div
-                style={{
-                  backgroundColor: "#f2f2f2",
-                  height: "100%",
-                  width: "50%",
-                  textAlign: "center",
-                }}
-              >
+            <div className={styles.y}>
+              <div className={styles.x}>
                 <p>Գինը</p>
                 <p>{product.price} AMD</p>
               </div>
-              <div
-                style={{
-                  backgroundColor: "#f2f2f2",
-                  height: "100%",
-                  width: "50%",
-                  textAlign: "center",
-                }}
-              >
+              <div className={styles.x}>
                 <p>զաղչված Գինը</p>
                 <p>{product.price} AMD</p>
               </div>
             </div>
-            <div
-              style={{
-                display: "flex",
-                height: "120px",
-                width: "100%",
-                marginBlock: "50px",
-                justifyContent: "space-between",
-              }}
-            >
-              <div
-                style={{
-                  backgroundColor: "#f2f2f2",
-                  height: "100%",
-                  width: "50%",
-                  textAlign: "center",
-                }}
-              >
+            <div className={styles.y}>
+              <div className={styles.x}>
                 <p>{(product.price / 12).toFixed(0)} AMD</p>
                 <p>12 Ամիս ապառիկ</p>
               </div>
-              <div
-                style={{
-                  backgroundColor: "#f2f2f2",
-                  height: "100%",
-                  width: "50%",
-                  textAlign: "center",
-                }}
-              >
+              <div className={styles.x}>
                 <p>{(product.price / 24).toFixed(0)} AMD</p>
                 <p>24 Ամիս ապառիկ</p>
               </div>
             </div>
+            <GoodButton item={product} />
           </div>
         </div>
+      </div>
+      <div className={styles.description}>
+        <p>display {product?.description?.display}</p>
+        <p>ram {product?.description?.ram}</p>
+        <p>rom {product?.description?.rom}</p>
+        <p>camera {product?.description?.camera}</p>
+        <p>front-camera {product?.description?.front_camera}</p>
+        <p>batery {product?.description?.batery}</p>
       </div>
       <Footer />
     </div>

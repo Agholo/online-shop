@@ -1,13 +1,17 @@
 import style from "./navbar.module.css";
 import { Link } from "react-router-dom";
+import HoverOpen from "./HoverOpen";
 
-function Page(props) {
+function Page({ path, name }) {
   return (
-    <Link to={`/${props.path}`} className={style.link}>
-      <div className={style.page}>
-        <p>{props.name}</p>
-      </div>
-    </Link>
+    <>
+      <Link to={`/${path}`} className={style.link}>
+        <div className={style.page}>
+          <p>{name}</p>
+        </div>
+      </Link>
+      {path === "categories" && <HoverOpen />}
+    </>
   );
 }
 

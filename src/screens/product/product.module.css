@@ -1,7 +1,6 @@
 .contenier {
     width: 80%;
     height: 770px;
-    background-color: red;
     margin: auto;
     display: flex;
     margin-block: 15px;
@@ -30,4 +29,31 @@ img {
 
 .imageSide img:hover {
     transform: scale(0.9);
+}
+
+.x {
+    background-color: #f2f2f2;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+}
+
+.y {
+    display: flex;
+    height: 120px;
+    width: 100%;
+    margin-block: 50px;
+    justify-content: space-between;
+}
+
+.description {
+    width: 80%;
+    min-height: 200px;
+    background-color: white;
+    margin: auto;
+}
+
+.description p {
+    margin: 35px;
+    font-size: 23px;
 }

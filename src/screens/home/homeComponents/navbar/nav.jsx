@@ -1,3 +1,4 @@
+import HoverOpen from "./HoverOpen.jsx";
 import Block from "./block.jsx";
 import Navigations from "./navigations.jsx";
 
@@ -6,6 +7,7 @@ function Nav() {
     <div>
       <Block />
       <Navigations />
+      <HoverOpen />
     </div>
   );
 }
