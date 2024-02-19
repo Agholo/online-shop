@@ -1,0 +1,33 @@
+.contenier {
+    width: 80%;
+    height: 770px;
+    background-color: red;
+    margin: auto;
+    display: flex;
+    margin-block: 15px;
+}
+
+.imageSide {
+    height: 100%;
+    width: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    border-right: 1px solid rgba(128, 128, 128, 0.25);
+}
+
+.content {
+    height: 100%;
+    width: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    transition: all 250ms ease;
+}
+
+.imageSide img:hover {
+    transform: scale(0.9);
+}

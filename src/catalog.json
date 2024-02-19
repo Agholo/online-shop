@@ -7,7 +7,15 @@
             "new" : false,
             "src": "/uploads/shop/products/medium/035dd121ecff274efa5f192f67f41367.webp",
             "price": 100000,
-            "category": "smartfony"
+            "category": "smartfony",
+            "description" :{
+                "display": "6.14``",
+                "ram": "4gb",
+                "rom": "128gb",
+                "camer": "60mp",
+                "front_camera": "15mp",
+                "batery": "4500mah"
+            }
         },
         {
             "name": "Lenovo tablet 0 15IGL05",
