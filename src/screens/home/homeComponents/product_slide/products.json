@@ -1,0 +1,66 @@
+{
+    "products" : [
+        {
+            "href" : "/smartfony",
+            "png" : "/uploads/cat_icons/catss/phone.png",
+            "name" : "ՀԵՌԱԽՈՍՆԵՐ"
+        },
+        {
+            "href" : "/tablets",
+            "png" : "/uploads/cat_icons/catss/tablet.png",
+            "name" : "ՊԼԱՆՇԵՏՆԵՐ"
+        },
+        {
+            "href" : "/smartfony",
+            "png" : "/uploads/cat_icons/catss/smartwatch.png",
+            "name" : "ԺԱՄԱՑՈՒՅՑՆԵՐ"
+        },
+        {
+            "href" : "/smartfony",
+            "png" : "/uploads/cat_icons/catss/laptop.png",
+            "name" : "ՆՈԹԲՈՒՔԵՐ"
+        },
+        {
+            "href" : "/smartfony",
+            "png" : "/uploads/cat_icons/catss/monitor.png",
+            "name" : "ՄՈՆԻՏՈՐՆԵՐ"
+        },
+        {
+            "href" : "/smartfony",
+            "png" : "/uploads/cat_icons/catss/television.png",
+            "name" : "ՀԵՌՈՒՍՏԱՑՈՒՅՑՆԵՐ"
+        },{
+            "href" : "/smartfony",
+            "png" : "/uploads/cat_icons/catss/scooter-min.png",
+            "name" : "ՍԿՈՒՏԵՐՆԵՐ"
+        },{
+            "href" : "/smartfony",
+            "png" : "/uploads/cat_icons/catss/drone%20(1).png",
+            "name" : "ԴՐՈՆՆԵՐ"
+        },{
+            "href" : "/smartfony",
+            "png" : "/uploads/cat_icons/catss/phone-case.png",
+            "name" : "ԱՔՍԵՍՈՒԱՐՆԵՐ"
+        },{
+            "href" : "/smartfony",
+            "png" : "/uploads/cat_icons/catss/right-to-access.png",
+            "name" : "ՀԱՄԱԿԱՐԳԻՉՆԵՐ"
+        },{
+            "href" : "/smartfony",
+            "png" : "/uploads/cat_icons/catss/printer%20(1).png",
+            "name" : "ՏՊԻՉՆԵՐ"
+        },{
+            "href" : "/smartfony",
+            "png" : "/uploads/cat_icons/catss/projector.png",
+            "name" : "ՊՐՈՅԵԿՏՈՐՆԵՐ"
+        },{
+            "href" : "/smartfony",
+            "png" : "/uploads/cat_icons/catss/photo-camera-vintage-min.png",
+            "name" : "ՖՈՏՈԽՑԻԿՆԵՐ"
+        },{
+            "href" : "/smartfony",
+            "png" : "/uploads/cat_icons/catss/big-and-small-dots.png",
+            "name" : "ԱՅԼ"
+        }
+    ]
+}

@@ -1,0 +1,43 @@
+.block {
+    height: 75px;
+    width: 100%;
+    background-color: #1D1D1D;
+    border-bottom: 11px solid #B31919;
+}
+
+.page {
+    height: 40px;
+    padding-inline: 35px;
+    border-right: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+}
+.page:hover {
+    color: #B31919;
+}
+
+.link{
+    color: "white";
+    text-decoration: none;
+}
+
+.contenier {
+    height: 75px;
+    width: 100%;
+    background-color: #1D1D1D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    height: 75px;
+    width: 80%;
+}

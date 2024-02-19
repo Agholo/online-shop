@@ -1,0 +1,135 @@
+.contenier {
+    margin-bottom: 30px;
+    height: 1000px;
+    width: 80%;
+    margin: auto;
+}
+
+.goodsSide {
+    display: flex;
+    height: 920px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.good {
+    height: 450px;
+    width: calc(100vw * 0.8 * 0.19);
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #9595954d;
+    position: relative;
+    box-shadow: 0px 0px 80px 2px rgba(34, 60, 80, 0.15);
+}
+
+.heart {
+    position: absolute;
+    right: 10px;
+    top: 45%;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -5px -5px 25px 10px rgba(34, 60, 80, 0.2);
+    cursor: pointer;
+}
+
+.heart .svg path{
+    fill: #e0e0e0;
+    transition: all 250ms ease-in-out;
+}
+
+.heart:hover .svg path {
+    fill: #B31919;
+  }
+
+.good:last-child{
+    margin-right: 0;
+}
+
+.imageSide{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    height: 100%;
+    width: auto;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+
+.image:hover {
+    transform: scale(0.9);
+}
+
+.itemName {
+    color: #B31919;
+    font-weight: 800;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.goodButton {
+    height: 50px;
+    width: 120px;
+    background-color: #B31919;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    border: 0;
+    border-radius: 5px;
+    margin: auto;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+}
+
+.goodButton:hover {
+    background-color: #ed3131;
+}
+
+.main {
+    width: 100%;
+}
+
+.hit {
+    position: absolute;
+    height: 30px;
+    width: 85px;
+    top: 5px;
+    left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(90deg, #0C9ACB, #00AFFF);
+    color: white;
+    border-radius: 5px;
+}
+
+.new {
+    position: absolute;
+    height: 40px;
+    width: 90px;
+    top: 45px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding-inline: 15px;
+    background-color: #4CAF50;
+    border: 1px solid #009D00;
+    box-shadow: 5px 5px 75px 25px rgba(34, 60, 80, 0.35);
+    color: white;
+    border-radius: 2px;
+    clip-path: polygon(0% 0%, 100% 0, 87% 50%, 100% 100%, 0% 100%);
+}

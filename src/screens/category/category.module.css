@@ -1,0 +1,16 @@
+.contenier {
+    min-height: calc(100vh - 175px);
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.content {
+    min-height: 100%;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
