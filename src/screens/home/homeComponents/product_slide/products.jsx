@@ -29,7 +29,7 @@ function Products() {
         className={styles.contenier}
         style={{ transform: `translateX(${currentPosition}px)` }}
       >
-        {allProducts.map((item, index) => (
+        {allProducts.map((item) => (
           <Item
             name={item.name}
             href={item.href}

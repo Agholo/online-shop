@@ -2,15 +2,12 @@ import Banner from "../home/homeComponents/header/banner";
 import Nav from "../home/homeComponents/navbar/nav";
 import Footer from "../home/homeComponents/footer/Footer";
 import styles from "./product.module.css";
-import { useContext, useEffect, useState } from "react";
-import { PopupControl } from "../../providers/popupControler";
-import ToCart from "../../popups/toCart";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import catalogJson from "../../catalog.json";
 import GoodButton from "../home/homeComponents/content/goodButton";
 
 function Product() {
-  let { isOpen } = useContext(PopupControl);
   let { name } = useParams();
   let [product, setProduct] = useState({});
   useEffect(() => {
@@ -25,7 +22,6 @@ function Product() {
     <div style={{ backgroundColor: "#f2f2f2" }}>
       <Banner />
       <Nav />
-      {isOpen && <ToCart />}
       <div className={styles.contenier}>
         <div className={styles.imageSide}>
           <img

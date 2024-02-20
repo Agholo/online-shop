@@ -1,4 +1,4 @@
-import { useContext, useMemo } from "react";
+import { useMemo } from "react";
 import styles from "./category.module.css";
 import catalogJson from "../../catalog.json";
 import Goods from "../home/homeComponents/content/goods";
@@ -7,12 +7,9 @@ import Search from "./search/Search";
 import Nav from "../home/homeComponents/navbar/nav";
 import Banner from "../home/homeComponents/header/banner";
 import Footer from "./../home/homeComponents/footer/Footer";
-import { PopupControl } from "../../providers/popupControler";
-import ToCart from "../../popups/toCart";
 
 const Category = () => {
   let { id } = useParams();
-  let { isOpen } = useContext(PopupControl);
   const products = useMemo(() => {
     let list = [];
     catalogJson.catalog.forEach((element) => {
@@ -35,7 +32,6 @@ const Category = () => {
         </div>
       </div>
       <Footer />
-      {isOpen && <ToCart />}
     </>
   );
 };
