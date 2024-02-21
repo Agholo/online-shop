@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import styles from "./popup.module.css";
 import { PopupControl } from "../providers/popupControler";
 import { cartContext } from "../providers/cartContext";
+import { Link } from "react-router-dom";
 
 function ToCart() {
   let { isOpen, setOpen } = useContext(PopupControl);
@@ -66,7 +67,16 @@ function ToCart() {
           <p style={{ fontSize: "22px" }}>Ենթակա է վճարման</p>
           <p style={{ fontSize: "22px" }}>{totalPrice} AMD</p>
         </div>
-        <button className={styles.submit}>Ձևակերպել Պատվերը</button>
+        <Link to="/deal" style={{ textDecoration: "none" }}>
+          <button
+            className={styles.submit}
+            onClick={() => {
+              setOpen(false);
+            }}
+          >
+            Ձևակերպել Պատվերը
+          </button>
+        </Link>
       </div>
     </div>
   );

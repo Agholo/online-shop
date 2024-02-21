@@ -7,28 +7,32 @@ import Search from "./search/Search";
 import Nav from "../home/homeComponents/navbar/nav";
 import Banner from "../home/homeComponents/header/banner";
 import Footer from "./../home/homeComponents/footer/Footer";
+import { useState } from "react";
 
 const Category = () => {
   let { id } = useParams();
   const products = useMemo(() => {
-    let list = [];
-    catalogJson.catalog.forEach((element) => {
-      if (element?.category === id) {
-        list.push(element);
-      }
+    return catalogJson.catalog.filter((element) => {
+      return element?.category === id;
     });
-    return list;
   }, [id]);
+  const [sortedProduct, setSortedProduct] = useState(products);
   return (
     <>
       <Banner />
       <Nav />
       <div className={styles.contenier}>
-        <Search />
+        <Search
+          catalog={products}
+          setCatalog={setSortedProduct}
+          sortedProduct={sortedProduct}
+        />
         <div className={styles.content}>
-          {products.map((item, index) => (
-            <Goods key={index} item={item} />
-          ))}
+          {sortedProduct.length
+            ? sortedProduct.map((item, index) => (
+                <Goods key={index} item={item} />
+              ))
+            : "there are no products"}
         </div>
       </div>
       <Footer />

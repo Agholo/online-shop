@@ -6,11 +6,12 @@ function HoverOpen() {
   let products = productJson.products;
   return (
     <div className={styles.hoverCont}>
-      {products.map((product) => {
+      {products.map((product, index) => {
         return (
           <Link
             to={`/categories/category${product.href}`}
             style={{ textDecoration: "none" }}
+            key={index}
           >
             <div className={styles.bt}>
               <img src={`https://redstore.am${product.png}`} alt=""></img>

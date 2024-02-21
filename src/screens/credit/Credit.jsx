@@ -6,7 +6,7 @@ const Credit = () => (
   <div>
     <Banner />
     <Nav />
-    <div>Connect</div>
+    <div>Credit</div>
     <Footer />
   </div>
 );

@@ -14,3 +14,40 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+.brendSearch {
+    width: 100%;
+    min-height: 400px; 
+    background-color: blue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.brend {
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    transition: background-color 250ms ease;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    font-size: 20px;
+}
+
+.brend:hover {
+    background-color: #d2d2d2;
+}
+
+.price {
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    margin-inline: 22px;
+}
+
+.price:focus {
+    outline: 0;
+}
