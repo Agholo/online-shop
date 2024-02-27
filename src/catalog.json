@@ -50,7 +50,7 @@
             "hit": true,
             "new" : false,
             "src": "/uploads/shop/products/medium/035dd121ecff274efa5f192f67f41367.webp",
-            "price": 100000,
+            "price": 115000,
             "category": "smartfony"
         },
         {
@@ -86,7 +86,8 @@
             "hit": false,
             "new" : false,
             "src": "/uploads/shop/products/medium/035dd121ecff274efa5f192f67f41367.webp",
-            "price": 100000
+            "price": 120000,
+            "category" : "smartfony"
         },
         {
             "name": "Lenovo IdeaPad 3 15IGL05",

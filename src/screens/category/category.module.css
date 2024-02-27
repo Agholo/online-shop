@@ -18,7 +18,6 @@
 .brendSearch {
     width: 100%;
     min-height: 400px; 
-    background-color: blue;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -46,6 +45,7 @@
     width: 150px;
     border-radius: 10px;
     margin-inline: 22px;
+    margin-top: 15px;
 }
 
 .price:focus {

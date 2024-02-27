@@ -1,0 +1,126 @@
+.contenier {
+    min-height: calc(100vh - 161px);
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputSide {
+    min-height: 100%;
+    width: 50%;
+    background-color: white;
+}
+
+.inputSide input {
+    height: 50px;
+    width: 420px;
+    margin-top: 25px;
+    margin-left: 25px;
+    border-radius: 2px;
+    padding-inline: 15px;
+    border: 1px solid #bcbcbc;
+    font-size: 18px;
+}
+
+.inputSide input:focus {
+    outline: none;
+}
+
+.cartSide {
+    height: 100%;
+    width: 50%;
+}
+
+.inputSide label {
+    font-size: 18px;
+    font-weight: 800;
+    color: #585858;
+    cursor: pointer;
+}
+
+.labelCont {
+    width: 200px;
+    text-align: end;
+    text-wrap: nowrap;
+    display: inline-block;
+}
+
+select, textarea {
+    height: 50px;
+    width: 420px;
+    margin-top: 25px;
+    margin-left: 25px;
+    border-radius: 2px;
+    padding-inline: 15px;
+    border: 1px solid #bcbcbc;
+    font-size: 18px;
+}
+
+select:focus {
+    outline: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.submit {
+    height: 50px;
+    width: 420px;
+    color: white;
+    background-color: #B31919;
+    border: 0;
+    margin-left: 225px;
+    margin-block: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+}
+
+.cartSide {
+    width: 45%;
+    border: 1px solid #bcbcbc;
+}
+
+.head {
+    width: 100%;
+    height: 45px;
+    border-bottom: 1px solid #bcbcbc;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.up {
+    background-color: #f2f2f2;
+    position: relative;
+    top: -25px;
+    width: 135px;
+    text-align: center;
+    font-weight: 800;
+}
+
+.priceSide {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    justify-content: space-around;
+}
+
+.product img {
+    height: 100px;
+    width: 100px;
+    margin-inline: 25px;
+}
+
+.product {
+    width: 100%;
+    border-bottom: 1px solid #bcbcbc;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}

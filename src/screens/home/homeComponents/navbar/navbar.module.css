@@ -45,7 +45,7 @@
 
 .hoverCont {
     width: 400px;
-    background-color: red;
+    background-color: #B31919;
     position: absolute;
     top: 161px;
     left: 10%;
@@ -73,7 +73,7 @@
 
 .bt:hover {
     background-color: #f2f2f2;
-    color: red;
+    color: #B31919;
 }
 
 .link:hover ~ .hoverCont{

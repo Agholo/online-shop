@@ -17,6 +17,7 @@ const Category = () => {
     });
   }, [id]);
   const [sortedProduct, setSortedProduct] = useState(products);
+  const [constSorted, setConstSorted] = useState(sortedProduct);
   return (
     <>
       <Banner />
@@ -25,7 +26,8 @@ const Category = () => {
         <Search
           catalog={products}
           setCatalog={setSortedProduct}
-          sortedProduct={sortedProduct}
+          sortedProduct={constSorted}
+          setConstSorted={setConstSorted}
         />
         <div className={styles.content}>
           {sortedProduct.length

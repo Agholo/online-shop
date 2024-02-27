@@ -1,17 +1,24 @@
 import { useRef, useState } from "react";
 import styles from "../category.module.css";
 
-function Search({ catalog, setCatalog, sortedProduct }) {
+function Search({ catalog, setCatalog, sortedProduct, setConstSorted }) {
   const maxPrice = Math.max(...sortedProduct.map((item) => item.price));
   let priceFrom = useRef();
   let priceTo = useRef();
   let [priceRange, setPriceRange] = useState([0, maxPrice]);
+
   function handle(event) {
     let brend = event.target.name;
     let sorted = catalog.filter((item) => {
       return brend === item.brend;
     });
     setCatalog(sorted);
+    setConstSorted(sorted);
+    if (sortedProduct.every((elem) => elem.brend === brend)) {
+      setCatalog(catalog);
+      setConstSorted(catalog);
+    }
+    setPriceRange(Math.max(...sortedProduct.map((item) => item.price)));
   }
 
   function handlePrice() {
@@ -29,23 +36,35 @@ function Search({ catalog, setCatalog, sortedProduct }) {
   }
 
   return (
-    <div style={{ height: "120vh", width: "25%", backgroundColor: "red" }}>
+    <div style={{ height: "120vh", width: "25%" }}>
       <div className={styles.brendSearch} onClick={handle}>
         <button className={styles.brend} name="google">
-          google
+          Google
         </button>
         <button className={styles.brend} name="samsung">
-          samsung
+          Samsung
         </button>
         <button className={styles.brend} name="iphone">
-          iphone
+          Iphone
         </button>
-        <button className={styles.brend}></button>
-        <button className={styles.brend}></button>
-        <button className={styles.brend}></button>
-        <button className={styles.brend}></button>
-        <button className={styles.brend}></button>
-        <button className={styles.brend}></button>
+        <button className={styles.brend} name="nokia">
+          Nokia
+        </button>
+        <button className={styles.brend} name="asus">
+          Asus
+        </button>
+        <button className={styles.brend} name="motarola">
+          Motarola
+        </button>
+        <button className={styles.brend} name="xiaomi">
+          Xiaomi
+        </button>
+        <button className={styles.brend} name="nothing">
+          Nothing
+        </button>
+        <button className={styles.brend} name="onePlus">
+          One Plus
+        </button>
       </div>
       <div>
         <input

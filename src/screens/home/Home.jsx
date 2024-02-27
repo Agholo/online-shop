@@ -8,7 +8,7 @@ import React from "react";
 
 function Home() {
   return (
-    <div className="main">
+    <div style={{ backgroundColor: "#F2F2F2" }}>
       <Banner />
       <Nav />
       <Slide />
