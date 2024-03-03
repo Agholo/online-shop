@@ -2,6 +2,7 @@
     height: 400px;
     width: 100%;
     background-color: #1D1D1D;
+    margin-top: 25px;
 }
 
 .contenier {
@@ -9,7 +10,6 @@
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    background-color: red;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -18,7 +18,26 @@
 .topComponents {
     height: 70%;
     width: 22%;
-    background-color: blue;
+    display: flex;
+    align-items: center;
+}
+
+.gradientText {
+    background-image: linear-gradient(90deg, #FFBB31, red);
+    font-weight: bolder;
+    background-position: 0 0;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: anim 1s ease infinite;
+}
+
+@keyframes anim {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -210px 0;
+    }
 }
 
 .nav {

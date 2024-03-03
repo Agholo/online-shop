@@ -4,7 +4,7 @@ import About from "../screens/about/About.jsx";
 import Connect from "../screens/connect/Connect.jsx";
 import Credit from "../screens/credit/Credit.jsx";
 import Delivery from "../screens/delivery/Delivery.jsx";
-import Categories from "../screens/caregories/Categories.jsx";
+import Categories from "../screens/categories/Categories.jsx";
 import Category from "../screens/category/Category.jsx";
 import React from "react";
 import Product from "../screens/product/Product.jsx";

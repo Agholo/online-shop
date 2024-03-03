@@ -1,7 +1,7 @@
 import Banner from "../home/homeComponents/header/banner";
 import Nav from "../home/homeComponents/navbar/nav";
 import styles from "./categories.module.css";
-import jsonProducts from "../../screens/home/homeComponents/product_slide/products.json";
+import jsonProducts from "../home/homeComponents/product_slide/products.json";
 import Item from "../home/homeComponents/product_slide/item";
 import Footer from "../home/homeComponents/footer/Footer";
 

@@ -1,12 +1,13 @@
 import Banner from "../home/homeComponents/header/banner";
 import Nav from "../home/homeComponents/navbar/nav";
 import Footer from "../home/homeComponents/footer/Footer";
+// import { Link } from "react-router-dom";
 
 const Delivery = () => (
-  <div>
+  <div style={{ backgroundColor: "#F2F2F2" }}>
     <Banner />
     <Nav />
-    <div>Delivery</div>
+    <div>delivery</div>
     <Footer />
   </div>
 );
