@@ -48,7 +48,7 @@ function Top() {
         </div>
       </div>
       <div className={styles.topComponents}>
-        <Cog color="white" height={"55px"} width={"55px"} />
+        <Cog color="white" height={"55px"} width={"55px"} className={styles.rotation}/>
         <div className={styles.textSide}>
           <h4
             style={{

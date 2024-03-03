@@ -52,11 +52,23 @@
     width: 80%;
     height: calc(50% - 100px);
     margin: auto;
-    border: 1px solid #646464;
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: #f2f2f2;
+}
+
+.rotation {
+    animation: rot 2.5s linear infinite;
+}
+
+@keyframes rot {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .bottom img {

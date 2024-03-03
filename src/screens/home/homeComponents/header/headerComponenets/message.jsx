@@ -3,6 +3,7 @@ import icon from "./messenger.png";
 
 function Message() {
   const [showPopup, setShow] = useState(false);
+  const [isOpen, setOpen] = useState(false);
   return (
     <div>
       <div
@@ -22,6 +23,7 @@ function Message() {
         }}
         onClick={() => {
           setShow(!showPopup);
+          setOpen(false);
         }}
       >
         <img src={icon} alt=""></img>
@@ -34,7 +36,7 @@ function Message() {
           height: "450px",
           width: "450px",
           borderRadius: "15px",
-          backgroundColor: "white",
+          backgroundColor: `${isOpen ? "#CCCCCC" : "white"}`,
           border: "2px solid #B31919",
           boxShadow: "5px 5px 15px 5px rgba(34, 60, 80, 0.2)",
           padding: "25px",
@@ -57,12 +59,67 @@ function Message() {
             fontSize: "20px",
             border: 0,
             letterSpacing: "1px",
-            marginTop: "250px",
+            marginTop: "240px",
             cursor: "pointer",
           }}
+          onClick={() => setOpen(!isOpen)}
         >
           Start chat
         </button>
+        {isOpen && (
+          <div
+            style={{
+              height: "20%",
+              width: "502px",
+              borderRadius: "10px",
+              backgroundColor: "white",
+              position: "fixed",
+              bottom: "125px",
+              right: "25px",
+              textAlign: "center"
+            }}
+          >
+            <h1>Log in</h1>
+            <a href="https://www.messenger.com/" style={{textDecoration: "none"}}><button
+              style={{
+                height: "75px",
+                width: "450px",
+                backgroundColor: "#B31919",
+                borderRadius: "10px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                color: "white",
+                fontWeight: 800,
+                fontSize: "20px",
+                border: 0,
+                letterSpacing: "1px",
+                marginTop: "240px",
+                cursor: "pointer",
+                position: "relative",
+                bottom: "200px",
+                marginLeft: "25px"
+              }}
+              onClick={() => setOpen(!isOpen)}
+            >
+              Use Messanger
+            </button></a>
+          </div>
+        )}
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <img
+            src={icon}
+            alt=""
+            style={{ height: "25px", width: "25px", marginInline: "5px" }}
+          ></img>
+          <p>Powered by Messenger</p>
+        </div>
       </div>
     </div>
   );

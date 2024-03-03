@@ -13,8 +13,8 @@ function Login(props) {
   }, [itemsInCart]);
   return (
     <div className="enter">
-      <img src={props.svg} alt="enter"></img>
-      <p>Մուտք</p>
+      {/* <img src={props.svg} alt="enter"></img>
+      <p>Մուտք</p> */}
       <img
         src={cartSVG}
         alt=""
