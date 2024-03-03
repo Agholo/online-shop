@@ -4,6 +4,22 @@ import icon from "./messenger.png";
 function Message() {
   const [showPopup, setShow] = useState(false);
   const [isOpen, setOpen] = useState(false);
+  function popupwindow(url, title, w, h) {
+    var left = window.innerWidth / 2 - w;
+    var top = window.innerHeight / 2 - 0.66 * h;
+    return window.open(
+      url,
+      title,
+      "toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=" +
+        w +
+        ", height=" +
+        h +
+        ", top=" +
+        top +
+        ", left=" +
+        left
+    );
+  }
   return (
     <div>
       <div
@@ -76,11 +92,11 @@ function Message() {
               position: "fixed",
               bottom: "125px",
               right: "25px",
-              textAlign: "center"
+              textAlign: "center",
             }}
           >
             <h1>Log in</h1>
-            <a href="https://www.messenger.com/" style={{textDecoration: "none"}}><button
+            <button
               style={{
                 height: "75px",
                 width: "450px",
@@ -98,12 +114,20 @@ function Message() {
                 cursor: "pointer",
                 position: "relative",
                 bottom: "200px",
-                marginLeft: "25px"
+                marginLeft: "25px",
               }}
-              onClick={() => setOpen(!isOpen)}
+              onClick={() => {
+                setOpen(!isOpen);
+                popupwindow(
+                  "https://www.messenger.com/",
+                  "messanger",
+                  500,
+                  450
+                );
+              }}
             >
               Use Messanger
-            </button></a>
+            </button>
           </div>
         )}
         <div
