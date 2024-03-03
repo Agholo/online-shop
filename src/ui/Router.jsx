@@ -9,6 +9,7 @@ import Category from "../screens/category/Category.jsx";
 import React from "react";
 import Product from "../screens/product/Product.jsx";
 import Deal from "../screens/deal/Deal.jsx";
+import Result from "../screens/result/Result.jsx";
 
 function Router() {
   return (
@@ -22,6 +23,7 @@ function Router() {
         <Route element={<Connect />} path="/connect" />
         <Route element={<Category />} path="/categories/category/:id" />
         <Route element={<Product />} path="/categories/category/:id/:name" />
+        <Route element={<Result />} path="/categories/category/search" />
         <Route element={<Deal />} path="/deal" />
 
         <Route path="*" element={<div>not found</div>} />
